@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nene — Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fdf7f9;
+    --fg: #2a1f26;
+    --muted: #6b5b64;
+    --accent: #b5486a;
+    --card: #ffffff;
+    --border: #ecdfe4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1b1418;
+      --fg: #f2e9ec;
+      --muted: #b8a6ae;
+      --accent: #e88aa6;
+      --card: #241b20;
+      --border: #382a30;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+  }
+  .effective-date {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 2.2em;
+    color: var(--accent);
+  }
+  p, li { color: var(--fg); }
+  ul { padding-left: 1.3em; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 28px;
+  }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 48px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy for Nene</h1>
+  <div class="effective-date">Effective date: August 12, 2026</div>
+
+  <div class="card">
+    <p>Nene ("the app") is developed by Tegribas Global Limited ("we", "us"). This
+    policy explains what happens to your data when you use Nene. We wrote it to
+    match exactly what the app does — there is no third-party tracking to
+    disclose because none exists in this app.</p>
+  </div>
+
+  <h2>The short version</h2>
+  <p>Nene stores everything on your device, in an encrypted database. We do not
+  operate any servers, we do not collect analytics, and we cannot see your
+  data — there is no account, no login, and no way for us to access it even if
+  we wanted to.</p>
+
+  <h2>What data Nene stores, and where</h2>
+  <p>Cycle days, symptoms, notes, medications, fertility observations, and any
+  photos you attach are stored <strong>only on your device</strong>, in a
+  SQLCipher-encrypted database. The encryption key is generated on-device and
+  held in your platform's secure key store (Android Keystore / iOS Keychain) —
+  it never leaves the device and is never sent to us, because there is nowhere
+  for it to be sent.</p>
+  <p>Settings (app preferences, theme, reminder times) are stored locally in
+  the same way, on-device only.</p>
+  <p>Uninstalling the app, or using the in-app "Delete all data" option,
+  permanently erases this data. We hold no copy, because none was ever created
+  outside your device.</p>
+
+  <h2>Network activity</h2>
+  <p>Nene has no analytics SDK, no crash-reporting SDK, no advertising SDK, and
+  no general internet access for app data. The only network activity the app
+  ever performs is:</p>
+  <ul>
+    <li><strong>In-app purchases</strong>, handled entirely by Google Play
+    Billing (Android) or Apple's StoreKit (iOS). Payment details are processed
+    by Google/Apple under their own privacy policies — we never see your
+    payment information, and the only thing sent back to the app is whether a
+    purchase was successful.</li>
+  </ul>
+
+  <h2>Optional, opt-in features</h2>
+  <p>These features are <strong>off by default</strong> and only activate if
+  you explicitly enable them in Settings:</p>
+  <ul>
+    <li><strong>Health Connect (Android) / Apple Health (iOS) sync</strong> —
+    if you turn this on, Nene reads sleep data from, and/or writes period days
+    to, your device's own health data store (Health Connect or Apple Health).
+    This is a device-to-device exchange managed by the operating system — it
+    does not pass through any server we operate, and you can revoke access at
+    any time in your device's health app permissions.</li>
+    <li><strong>Biometric app lock</strong> — Face ID / fingerprint unlock is
+    handled entirely by your device's own biometric APIs. Nene never receives
+    or stores biometric data; it only receives a yes/no "unlocked" result from
+    the OS.</li>
+    <li><strong>Photo attachments</strong> (e.g. test strip photos) — stored
+    encrypted (AES-256-GCM) on-device, tied to your device's key. Never
+    uploaded anywhere.</li>
+    <li><strong>Notifications</strong> — reminder scheduling is local to your
+    device (no push notification server is involved).</li>
+  </ul>
+
+  <h2>Data sharing</h2>
+  <p>We do not share, sell, or transmit your data to anyone, because we never
+  receive it in the first place.</p>
+
+  <h2>Backups and export</h2>
+  <p>If you use the in-app encrypted backup or CSV/PDF export features, the
+  resulting file is created on your device and saved wherever you choose to
+  save it (device storage, a folder you pick, or a share-sheet destination
+  like email or cloud storage you select). That choice, and everything after
+  it, is under your control — Nene itself does not upload the file
+  anywhere.</p>
+
+  <h2>Children's privacy</h2>
+  <p>Nene is not directed at children and does not knowingly collect data from
+  children, consistent with the app having no data collection at all.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the effective date above will be updated and the
+  new version will be posted at the same URL.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:yobadoba@chisquares.com">yobadoba@chisquares.com</a></p>
+
+  <footer>© 2026 Tegribas Global Limited</footer>
+</main>
+</body>
+</html>

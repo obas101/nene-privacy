@@ -102,11 +102,15 @@
   <p>Nene has no analytics SDK, no crash-reporting SDK, and no general internet
   access for app data. The only network activity the app ever performs is:</p>
   <ul>
-    <li><strong>In-app purchases</strong>, handled entirely by Google Play
-    Billing (Android) or Apple's StoreKit (iOS). Payment details are processed
-    by Google/Apple under their own privacy policies — we never see your
-    payment information, and the only thing sent back to the app is whether a
-    purchase was successful.</li>
+    <li><strong>In-app purchases</strong>, processed through Google Play
+    Billing (Android) or Apple's StoreKit (iOS), with RevenueCat as our
+    subscription management provider. RevenueCat receives your
+    purchase/subscription status (product purchased, renewal date, an
+    anonymous device-generated app user ID) to validate the purchase and
+    keep your Premium status accurate — never your cycle, symptom, or any
+    other health data, and never your payment details. Payment information
+    itself is handled entirely by Google/Apple under their own privacy
+    policies; we and RevenueCat never see it.</li>
     <li><strong>Advertising, on Android only</strong> (never on iOS). Free-tier
     Android users may see ads served by Google AdMob. Before any ad loads,
     Nene shows Google's consent form (required in the EU/UK/California and
@@ -144,9 +148,10 @@
 
   <h2>Data sharing</h2>
   <p>We do not share, sell, or transmit your cycle, symptom, or other health
-  data to anyone, because we never receive it in the first place. The one
-  exception described above is standard ad-request signals sent to Google
-  AdMob on Android — never app content, never health data.</p>
+  data to anyone, because we never receive it in the first place. The two
+  exceptions described above are standard purchase-status signals sent to
+  RevenueCat, and (Android only) standard ad-request signals sent to Google
+  AdMob — never app content, never health data, either way.</p>
 
   <h2>Backups and export</h2>
   <p>If you use the in-app encrypted backup or CSV/PDF export features, the
